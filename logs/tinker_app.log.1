@@ -1,0 +1,94 @@
+2024-05-11 08:55:44,958 ERROR: Exception on /request-password-reset [POST] [in /home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py:825]
+Traceback (most recent call last):
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/routes.py", line 38, in request_password_reset
+    send_password_reset_email(user)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/email.py", line 22, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/models.py", line 22, in get_reset_password_token
+    return jwt.encode(
+NameError: name 'jwt' is not defined
+2024-05-11 08:59:59,947 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/__init__.py:61]
+2024-05-11 09:00:39,824 ERROR: Exception on /request-password-reset [POST] [in /home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py:825]
+Traceback (most recent call last):
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/routes.py", line 38, in request_password_reset
+    send_password_reset_email(user)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/email.py", line 22, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/models.py", line 22, in get_reset_password_token
+    return jwt.encode(
+NameError: name 'jwt' is not defined
+2024-05-11 09:08:20,153 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/__init__.py:61]
+2024-05-11 09:11:15,980 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/__init__.py:61]
+2024-05-11 09:12:12,546 ERROR: Exception on /reset-password/b'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NiwiZXhwIjoxNzE1NDA4NTIwLjU4OTE0NjR9.vgr6xU53kb7_vDusRlkbGtPvV85E7HzK3yTrgO-KEbs' [GET] [in /home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py:825]
+Traceback (most recent call last):
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/routes.py", line 58, in reset_password
+    if current_user.is_authenticared:
+AttributeError: 'AnonymousUserMixin' object has no attribute 'is_authenticared'
+2024-05-11 09:12:55,582 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/__init__.py:61]
+2024-05-11 09:19:32,223 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/app/__init__.py:61]
+2024-05-18 10:10:13,949 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:15:54,774 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:18:23,890 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:19:55,388 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:22:18,739 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:23:36,473 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:26:47,713 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:27:23,162 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:33:42,759 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:38:57,546 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:55:39,126 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 10:57:45,724 ERROR: Exception on /index [GET] [in /home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py:825]
+Traceback (most recent call last):
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/routes.py", line 67, in index
+    form = PostForm()
+NameError: name 'PostForm' is not defined
+2024-05-18 11:02:36,746 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/__init__.py:61]
+2024-05-18 11:02:55,149 ERROR: Exception on /index [GET] [in /home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py:825]
+Traceback (most recent call last):
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/missmandazi/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/chapter14_email_support/app/routes.py", line 67, in index
+    if form.validate_on_submit():
+NameError: name 'form' is not defined
